@@ -1,0 +1,37 @@
+.preLoader-container{
+    width: 100vw;
+    height: 100vh;
+    /* background: yellow; */
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    
+    
+
+}
+
+#preLoader{
+    width: 110px ;
+}
+.preLoader-text{
+    font-size: 25px;
+    font-weight: bold;
+  font-family: "Poppins", sans-serif;
+    opacity: 0.7;
+    line-height: 1px;
+    text-align: center;
+
+}
+.preLoader-sub-text{
+    padding: 2rem;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: 400;
+
+
+
+}
