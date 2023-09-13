@@ -9,17 +9,15 @@ const Home = () => {
   return (
     <section className="home-wraper " id="home">
       <motion.div
-         initial={{ y: "3rem", opacity: 0 }}
-         animate={{ y: 0, opacity: 1 }}
-         transition={{
-           duration: 3,
-           type: "",
-         }}
+        initial={{ y: "3rem", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 3,
+          type: "ease-in",
+        }}
         className="innerWidth home-container"
-    
       >
         <div className="phoneResponsiveContainer">
-          
           <Lottie animationData={homeAnimi1} />
         </div>
         {/* Left Side */}
@@ -43,10 +41,26 @@ const Home = () => {
           </div>
           <div className=" home-button-wrapper">
             <div className="home-button-left">
-              <Link to="get-started" spy={true} smooth={true} offset={30} duration={500} className="h-menu-link">Get Started</Link>
+              <Link
+                to="get-started"
+                spy={true}
+                smooth={true}
+                offset={30}
+                duration={500}
+                className="h-menu-link"
+              >
+                Get Started
+              </Link>
             </div>
             <div className="home-button-right">
-              <Link to="contact" spy={true} smooth={true} offset={30} duration={500} className="h-menu-link" >
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={30}
+                duration={500}
+                className="h-menu-link"
+              >
                 ABOUT US<span>&gt;</span>
               </Link>
             </div>
@@ -82,13 +96,6 @@ const Home = () => {
           </div>
         </div>
       </motion.div>
-      {/* <div className="home-annimation-area">
-        <ul className="box-area">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div> */}
     </section>
   );
 };

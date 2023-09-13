@@ -12,7 +12,7 @@ const GetStarted = () => {
           </span>
          <div className="g-button-container">
          <button className="g-button">
-            <a href="mailto:manikandan02.04.2003@gmail.com">Get Started</a>
+            <a href="mailto:jerome.stigmata@gmail.com">Get Started</a>
           </button>
          </div>
         </div>

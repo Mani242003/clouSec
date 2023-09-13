@@ -6,6 +6,8 @@ import OutsideClickHandler from "react-outside-click-handler";
 import { Link } from "react-scroll";
 
 const Header = () => {
+  const [menuOpened, setMenuOpened] = useState(false);
+
   const getMenuStyle = (menuOpened) => {
     if (document.documentElement.clientWidth <= 800) {
       // console.log(!menuOpened);
@@ -13,7 +15,6 @@ const Header = () => {
     }
   };
 
-  const [menuOpened, setMenuOpened] = useState(false);
   return (
     <section className="h-wrapper ">
       <div className="h-container  innerWidth">

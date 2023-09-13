@@ -12,9 +12,6 @@
 .phoneResponsiveContainer {
   display: none;
 }
-.phoneResponsiveContainer {
-  display: none;
-}
 /* Home Left */
 .home-left {
   display: flex;
@@ -24,6 +21,16 @@
   padding-left: 10%;
   gap: 1rem;
   padding-right: 2%;
+}
+.home-circle {
+  height: 4rem;
+  width: 4rem;
+  background-color: #ff8a73;
+  border-radius: 999px;
+  position: absolute;
+  right: -5%;
+  top: -22%;
+  z-index: -1;
 }
 .home-title {
   position: relative;
@@ -45,21 +52,9 @@
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
-
-.home-circle {
-  height: 4rem;
-  width: 4rem;
-  background-color: #ff8a73;
-  border-radius: 999px;
-  position: absolute;
-  right: -5%;
-  top: -22%;
-  z-index: -1;
-}
 .home-button-wrapper {
   display: flex;
   align-items: flex-start;
-
   width: 100%;
 }
 .home-button-left {
@@ -68,17 +63,12 @@
 .home-button-left > a {
   padding: 5px 20px;
   border-radius: 5px;
-
   background: #ff8a73;
   font-family: "Poppins", sans-serif;
-
   color: white;
-
   outline: none;
-
   font-weight: 400;
 }
-
 .home-button-left > a:hover {
   cursor: pointer;
   border: none;
@@ -86,7 +76,6 @@
 .home-button-right > a {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-
   cursor: pointer;
   padding-left: 1rem;
   font-size: 16px;
@@ -113,7 +102,6 @@
 .count-start > :nth-child(1) > :last-child {
   color: #ff8a73;
 }
-
 /* Home Ridht */
 .img-container {
   width: 35rem;
@@ -121,8 +109,7 @@
   overflow: hidden;
   z-index: 2;
 }
-
-.home-annimation-area {
+/* .home-annimation-area {
   width: 100%;
 }
 
@@ -134,7 +121,6 @@
   height: 100%;
   overflow: hidden;
 }
-
 .box-area li {
   position: absolute;
   display: block;
@@ -145,8 +131,7 @@
   animation: animate 15s linear infinite;
   bottom: -150px;
   /* z-index: 1; */
-}
-
+/* }
 .box-area li:nth-child(6) {
   left: 80%;
   width: 80px;
@@ -173,7 +158,6 @@
   animation-delay: 0s;
   animation-duration: 15s;
 }
-
 .box-area li:nth-child(2) {
   left: 65%;
   width: 40px;
@@ -185,8 +169,8 @@
   width: 110px;
   height: 110px;
   animation-delay: 3.5s;
-}
-@keyframes animate {
+} */
+/* @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.5;
@@ -195,8 +179,7 @@
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
   }
-}
-
+} */ 
 @media (max-width: 640px) {
   .home-container {
     margin-top: 1rem;
@@ -237,7 +220,6 @@
   .phoneResponsiveContainer {
     display: block;
   }
-
   .home-circle {
     height: 3.5rem;
     width: 3.5rem;
@@ -253,11 +235,8 @@
   .home-button-left > a {
     padding: 5px 10px;
     font-size: 12px;
-
   }
   .home-button-right >a{
     font-size: 14px;
   }
-  
-  
 }

@@ -5,27 +5,20 @@
  
   
 }
-.Features-Container {
-}
 .features-header-container {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
 }
-.feature-slider-container {
-}
 .feature-slider-card {
   background: #e4e9ff;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-
-
   display: flex;
   flex-direction: column;
   gap: 2rem;
   height: 22rem;
   overflow: hidden;
-
   margin: 1rem;
   border-radius: 7px;
 }
@@ -63,7 +56,6 @@
   .feature-slider-card {
     display: flex;
     flex-direction: column;
-
     padding: 0rem 2rem;
     height: 22rem;
     margin: 1rem;
@@ -71,6 +63,5 @@
   }
   .features-slider-img>img{
     width: 100px;
-
   }
 }

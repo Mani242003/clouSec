@@ -9,28 +9,24 @@ import sliderData from "../../utils/common";
 const Features = () => {
   var settings = {
     infinite: true,
-    // dots:true,
-    // slidesToShow:{mani},
-
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
     pauseOnHover: true,
   };
-
   const getMenuStyle = () => {
     if (document.documentElement.clientWidth <= 800) {
       // console.log(!menuOpened);
-      return (1);
+      return 1;
     }
     if (!document.documentElement.clientWidth <= 800) {
       // console.log(!menuOpened);
-      return (4);
+      return 4;
     }
   };
   return (
-    <section className="Features-wrapper" id="features" >
-      <div className=" Features-Container" >
+    <section className="Features-wrapper" id="features">
+      <div className=" Features-Container">
         <div className="features-header-container">
           <span className="orangeText">Explore Our Product Features</span>
         </div>
@@ -48,13 +44,10 @@ const Features = () => {
         </div>
       </div>
     </section>
-
   );
 };
 
 export default Features;
-
-
 
 const SliderCard = ({ title, imageUrl, description }) => {
   return (
